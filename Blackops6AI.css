@@ -1,0 +1,273 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff9800;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #ff9800;
+  color: #000;
+}
+
+/* Hero Section */
+header {
+  position: relative;
+  background-image: url('Blackops6main.jpeg'); /* Correct path to the image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+header .overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+header .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+header h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: #e0e0e0;
+}
+
+header .cta-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #ff9800;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+header .cta-btn:hover {
+  background-color: #e68900;
+}
+
+/* About Section */
+#about {
+  background-color: #111;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff9800;
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Features Section */
+#features {
+  padding: 80px 0;
+  background-color: #0d0d0d;
+}
+
+#features .feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+#features .feature {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+#features .feature:hover {
+  background-color: #222;
+}
+
+#features h3 {
+  font-size: 1.8rem;
+  color: #ff9800;
+  margin-bottom: 10px;
+}
+
+#features p {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+/* Release Info Section */
+#release-info {
+  background: linear-gradient(to right, #1c1c1c, #0d0d0d);
+  padding: 80px 0;
+  text-align: center;
+}
+
+#release-info h2 {
+  font-size: 2.5rem;
+  color: #ff9800;
+  margin-bottom: 20px;
+}
+
+#release-info p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+#release-info .cta-btn {
+  padding: 15px 40px;
+  background-color: #ff9800;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#release-info .cta-btn:hover {
+  background-color: #e68900;
+}
+
+/* Media Gallery */
+#media {
+  padding: 80px 0;
+  background-color: #111;
+  text-align: center;
+}
+
+#media h2 {
+  font-size: 2.5rem;
+  color: #ff9800;
+  margin-bottom: 40px;
+}
+
+#media .media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+#media .media-grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+#media .media-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #0d0d0d;
+  padding: 40px 0;
+  text-align: center;
+  color: #999;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #ff9800;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #e68900;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  .cta-btn {
+    padding: 10px 30px;
+  }
+}
