@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background for the entire site */
+    color: white; /* White text color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    height: 60px; /* Adjustment for logo size */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.loadouts {
+    width: 100%; /* Full width for the loadouts section */
+}
+
+.loadout-container {
+    display: flex;
+}
+
+.loadout-menu {
+    width: 30%; /* Width of the loadout menu */
+    background-color: #1c1c1c; /* Lighten the background for contrast */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 20px; /* Space between menu and details */
+}
+
+.loadout-menu h3 {
+    border-bottom: 2px solid #ffcc00; /* Gold underline */
+}
+
+.loadout-menu ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; 
+}
+
+.loadout-menu li {
+    margin: 10px 0; /* Space between list items */
+}
+
+.loadout-menu a {
+    color: #ffcc00; /* Gold text color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.loadout-menu a:hover {
+    text-decoration: underline; /* Underline on hover for weapon links */
+}
+
+.loadout-details {
+    width: 70%; /* Width of the loadout details */
+    background-color: #1c1c1c; /* Same background as menu */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.loadout-details h3 {
+    border-bottom: 2px solid #ffcc00; /* Gold underline for each weapon */
+}
+
+.map-guide {
+    margin-top: 20px; /* Space above map guide section */
+}
+
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 10px;
+}
