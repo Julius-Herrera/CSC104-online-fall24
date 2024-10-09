@@ -1,3 +1,4 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: white; /* White text color */
 }
 
+/* Header styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -14,10 +16,26 @@ header {
     padding: 10px 20px;
 }
 
-header .logo img {
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
     height: 60px; /* Adjustment for logo size */
 }
 
+.site-title {
+    margin-left: 20px; /* Spacing between the logo and the title */
+    color: white; /* White color for the text */
+}
+
+.site-title h1 {
+    font-size: 24px; /* Adjust the size of the text */
+    margin: 0; /* Remove margin around the text */
+}
+
+/* Navigation styles */
 nav ul {
     list-style: none;
     display: flex;
@@ -33,6 +51,7 @@ nav a:hover {
     text-decoration: underline; /* Underline on hover for links */
 }
 
+/* Main content styles */
 main {
     display: flex;
     justify-content: space-between;
@@ -88,10 +107,12 @@ main {
     border-bottom: 2px solid #ffcc00; /* Gold underline for each weapon */
 }
 
+/* Map guide styles */
 .map-guide {
     margin-top: 20px; /* Space above map guide section */
 }
 
+/* Footer styles */
 footer {
     background-color: #1a1a1a;
     text-align: center;
